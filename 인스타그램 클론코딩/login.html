@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>instagram login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <aside>
+                <div class="handphone">
+                    <img src="핸드폰.png" alt="handphone">
+                </div>
+            </aside>
+            <article>
+                <div class="contents">
+                    <div class="login">
+                        <img class="instagramlogo" src="인스타그램.png" alt="instagramlogo">
+                        <!-- <form action="login" class="loginInput"> -->
+                            <input placeholder=" 전화번호, 사용자 이름 또는 이메일" type="text" class="idLogin">
+                            <input placeholder=" 비밀번호" type="password" class="passwordLogin">
+                            <button class="loginButton" onclick=""><strong>로그인</strong></button>
+                            <div class="orbox">
+                                <div class="line"></div>
+                                <div class="or">또는</div>
+                                <div class="line"></div>
+                            </div>
+                        <!-- </form> -->
+                        <div class="loginfacebook">
+                            <img height="16px" width="16px" src="Facebook_logo_(square).png" alt="facebooklogo">
+                            <span class="facebooklogin">Facebook으로 로그인</span>
+                        </div>
+                        <div class="forgetpassword">
+                            비밀번호를 잊으셨나요?
+                        </div>
+                    </div>
+                    <div class="signin">
+                        <div class="signinContent">
+                            계정이 없으신가요? <a
+                                href="signin.html"><strong>가입하기</strong></a>
+                        </div>
+                    </div>
+                    <div class="download">
+                        <div class="textdownload">
+                            앱을 다운로드하세요.
+                        </div>
+                        <div class="img_container">
+                            <img width="134px" height="43px"
+                                href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=ig_mid%3DF60F3872-5862-430C-8755-2212E8632065%26utm_campaign%3DloginPage%26utm_content%3Dlo%26utm_source%3Dinstagramweb%26utm_medium%3Dbadge%26original_referrer%3Dhttps%3A%2F%2Fwww.google.com%2F"
+                                src="다운로드 하기 googleplay.png" alt="download">
+                            <img width="110px" height="43px" src="microsoft에서 가져오기.png" alt="microsoft">
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footerlink">
+                <a href="https://about.meta.com/">Meta</a>
+                <a href="https://about.instagram.com/">소개</a>
+                <a href="https://about.instagram.com/blog">블로그</a>
+                <a href="https://about.instagram.com/about-us/careers">채용 정보</a>
+                <a href="https://help.instagram.com/">도움말</a>
+                <a href="https://developers.facebook.com/docs/instagram">API</a>
+                <a
+                    href="https://privacycenter.instagram.com/policy/?entry_point=ig_help_center_data_policy_redirect">개인정보처리방침</a>
+                <a href="https://help.instagram.com/581066165581870/">약관</a>
+                <a href="https://www.instagram.com/explore/locations/">위치</a>
+                <a href="https://www.instagram.com/web/lite/">Instagram Lite</a>
+                <a href="https://www.threads.net/login">Threads</a>
+                <a href="https://www.facebook.com/help/instagram/261704639352628">연락처 업로드 & 비사용자</a>
+                <a href="https://about.meta.com/technologies/meta-verified/">Meta Verified</a>
+            </div>
+            <div class="footerlanguage">
+                <select name="language">
+                    <option value="1">한국어</option>
+                    <option value="2">English</option>
+                </select>
+                <p>© 2024 Instagram from Meta</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const button = document.getElementsByClassName('loginButton');
+
+        button[0].onclick = () => {
+            const id = document.getElementsByClassName('idLogin')[0].value;
+            const password = document.getElementsByClassName('passwordLogin')[0].value;
+                if (id === "OYR2024" && password === "1234") {
+                    location.href = "/"
+                    // main 페이지로 넘어감
+                } else {
+                    alert('wrong id/password');
+                    // 오류 메시지
+                }
+        };
+
+
+    </script>
+</body>
+
+</html>
